@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut"   href="../Assetshtml/imageshtml/birla-img" type="image/x-icon">
+    <style>
+      body{
+        background-color:burlywood;
+      }
+    </style>
+</head>
+<body>
+    <fieldset>
+  <center><legend><h2>REGISTRATION FORM</h2></legend></center>
+    <form>
+        <label for="fname">FirstName:</label><br>
+
+        <input readonly     value="nithin"  required  id="fname" type="text" name="fname" placeholder="ENTER YOUR FIRSTNAME"/><br>
+        <br>
+        <label for="sname">Second name:</label><br>
+    
+        <input placeholder="mosarla" id="sname"  type="text" name="sname"/><br>
+        <label for="mail">Email:</label><br>
+        <input id="mail" type="email" name="mail" placeholder="ENTER YOUR MAIL"/>
+        <br>
+        <label for="mble">Mobile Number:</label><br>
+        <input type="tel" id="mble" name="mble"pattern="[0-9]{4,}" placeholder="ENTER YOUR MOBILE NUMBER"/><br>
+        <label for="pwsd">Enter password:</label><br>
+
+        <input autofocus type=password id="pwsd" name="pwsd" pattern="[a-z]{6}"/><br>
+        <label for="date">DateoFBirth</label><br>
+        <input type="date" id="date" name="date"/>
+        <h3>SKILLS:</h1>
+       
+        <input type="checkbox" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="checkbox" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="checkbox" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+        <br>
+
+      <label for="vol">Volume (between 0 and 50):</label>
+      <input type="range" id="vol" name="vol" min="0" max="50"><br>
+      <label for="clr">Change color</label><br>
+      <input type="color" id="clr"  name="clr"/>
+    <br>
+    <h3>Country</h3>
+        <input type="radio" id="india" name="fav_country" value="India">
+        <label for="india">India</label><br>
+        <input type="radio" id="Aus" name="fav_country" value="Aus">
+        <label for="Aus">Australia</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">USA</label><br>
+
+        
+        <h1>Fav-icon</h1>
+
+        <i class="fa fa-envelope-o"></i>
+        <i class="fa fa-envelope-o" style="font-size:24px"></i>
+        <i class="fa fa-envelope-o" style="font-size:36px"></i>
+        <i class="fa fa-envelope-o" style="font-size:48px;color:red"></i>
+        <br>
+        
+        <p>Used on a button:</p>
+        <button style="font-size:24px">Button <i class="fa fa-envelope-o"></i></button>
+        
+        <h3>State</h3>
+        
+        <label for="browser">Choose your browser from the list</label>
+        <input list="browsers" name="browser" id="browser">
+        <datalist id="browsers">
+          <option value="hyderabad">
+          <option value="chennai">
+          <option value="Bangalore">
+          <option value="Kolkata">
+          <option value="Delhi">
+        </datalist>
+        <br><br>
+        <label for="file">Upload photo</label>
+        <input type="file" id="files" name="files2"/>
+        <br><br>
+        <label for="file">Upload resume</label>
+        <input type="file" id="files" name="files2"/>
+        <BR><br>
+        <label for="cricketer">Choose a Intrests:</label>
+        <select name="cars" id="cars">
+          <option value="Cricket">Cricket</option>
+          <option value="Reading">Reading</option>
+          <option value="Listening Music">Listening Music</option>
+          <option value="Team Work">Team Work</option>
+        </select>
+        <br><br>
+        <textarea placeholder="Write about Your self to Hr" cols="30" rows="10" name="feedback"></textarea>
+        <br><br>
+        <input type="reset">
+        <br><br>
+        <input type="submit"/>
+        
+    </fieldset>
+
+    </form>
+    
+</body>
+</html>
